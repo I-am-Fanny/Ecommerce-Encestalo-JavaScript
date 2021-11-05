@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/basketball.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Productos</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning">
+                    <a class=" logo-header navbar-brand text-dark font-weight-bold" href="../index.html">ENCESTALO</a>
+                    <img class="rounded-circle bg-danger" src="../img/basketball.png" alt="logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        
+                    
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto font-weight-bold navbar-nav navbar-center">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="productos.html">Productos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                              </li>
+                              
+                            <li class="nav-item dropdown">
+                                <img src="../img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Realizar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h2 class="display-4 mt-4">Calzados</h2>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS JORDAN 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/jordan1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">8000</span></h1>
+                        
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>NIÑO</li>
+                            <li>TODOS LOS TALLES</li>
+                            <li>COLOR AZUL</li>
+                            <li>LIVIANAS Y CONFORTABLES</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS JORDAN 2 </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/jordan2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">10000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>TODOS LOS TALLES</li>
+                            <li>COLOR CELESTE</li>
+                            <li>HIPER COMODIDAD</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS JORDAN 3</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/z2h.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">9000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>DAMA</li>
+                            <li>T36 AL T40</li>
+                            <li>COLOR VIOLETA</li>
+                            <li>TALON REFORZADO</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLA NIKE 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/nike1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">13000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>HOMBRE</li>
+                            <li>T40 AL T47</li>
+                            <li>COLOR ROJO</li>
+                            <li>COMODIDAD</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS NIKE 3</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/nike2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">13000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>TODOS LOS TALLES</li>
+                            <li>COLOR MARRON</li>
+                            <li>COMODIDAD</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS NIKE 3</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/nike3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">15000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>TODOS LOS TALLES</li>
+                            <li>COLOR NEGRO</li>
+                            <li>ANATÓMICAS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS NIKE 4</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/nike4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">15000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>DAMA</li>
+                            <li>T35 AL T39</li>
+                            <li>COLOR BLANCO</li>
+                            <li>NATÓMICAS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS UNDER 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/under1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">11500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>HOMBRE</li>
+                            <li>T40 AL T46</li>
+                            <li>COLOR AZUL</li>
+                            <li>SUELA FLEXIBLE</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ZAPATILLAS UNDER 2</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/under2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">11500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>HOMBRE</li>
+                            <li>T41 AL T45</li>
+                            <li>COLOR GRIS</li>
+                            <li>SUELA FLEXIBLE/li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+                <h2 class="display-4 mt-4">Indumentaria</h2>
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA PHILA</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/r1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>T1 AL T4</li>
+                            <li>COLOR AZUL</li>
+                            <li>RESPIRABILIDAD</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA LAKERS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/r3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">6800</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>T1 AL T5</li>
+                            <li>COLOR VIOLETA</li>
+                            <li>DISEÑO FIT</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA BULLS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/r4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">5500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>T2,T3,T6</li>
+                            <li>COLOR ROJO</li>
+                            <li>TRANSPIRABILIDAD</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA NIÑO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/r2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>NIÑO</li>
+                            <li>T6 AL T12</li>
+                            <li>COLOR NARANJA</li>
+                            <li>COMODIDADD</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="13">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MEDIAS LAKERS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/medias1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">1200</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>TALLE UNICO</li>
+                            <li>COLOR BLANCAS</li>
+                            <li>ANTITRANSPIRANTES</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="14">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MEDIAS BULLS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/medias2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">1200</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>TALLE UNICO</li>
+                            <li>COLOR BLANCAS</li>
+                            <li>ANTITRANSPIRANTES</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="15">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+                <h2 class="display-4 mt-4">Complementos</h2>
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MOCHILA RAPTORS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/mochila1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3800</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>COLOR VIOLETA</li>
+                            <li>APTA PARA NETBOOK</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="16">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MOCHILA BULLS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/mochila2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4600</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>COLOR ROJO</li>
+                            <li>APTA PARA NETBOOK</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="17">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BOLSO LAKERS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/bolso.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">7000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>35 LITROS</li>
+                            <li>COLOR VIOLETA</li>
+                            <li>TELA ANTIDESGARRO</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="18">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">PELOTA NBA 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/pelota1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">3800</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>COLOR VIOLETA</li>
+                            <li>APTA PARA NETBOOK</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="19">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">PELOTA NBA 2</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/pelota2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">4600</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>UNISEX</li>
+                            <li>COLOR ROJO</li>
+                            <li>APTA PARA NETBOOK</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="20">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">ARO NBA</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/aro2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">7000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>35 LITROS</li>
+                            <li>COLOR VIOLETA</li>
+                            <li>TELA ANTIDESGARRO</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="21">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <!--Comienzo Footer-->
+    <footer class="footer container-fluid bg-warning">
+        <div class="row text-center">
+          <div class="col-lg-4 datos">
+            <h3 class="datos__element font-weight-bold text-muted">ENCESTALO</h3>
+            <p class="datos__element--modifier">Buenos Aires, Argentina</p>
+            <p class="datos__element--modifier">encestalo@gmail.com</p>
+          </div>
+          <div class="col-lg-4 info">
+            <h3 class="info__element font-weight-bold text-muted">ACERCA DE</h3>
+            <p  class="info__element--modifier">Bases y condiciones</p>
+            <p  class="info__element--modifier">Guia de talles</p>
+            <p  class="info__element--modifier">Sobre nosotros</p>
+          </div>
+          <div class="col-lg-4 redes">
+            <h3 class="redes__element font-weight-bold text-muted">SEGUINOS EN</h3>
+            <a href="https://es-la.facebook.com">
+                <i class="redes__element--modifier fab fa-facebook-f m-3"></i>
+              </a>
+            
+            
+              <a href="https://www.instagram.com">
+                <i class="redes__element--modifier fab fa-instagram m-3"></i>
+              </a>
+            
+            
+            <a href="https://twitter.com">
+              <i class="redes__element--modifier fab fa-twitter m-3" ></i>
+            </a>
+          </div>
+        </div>
+        
+      </footer>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pedido.js"></script>
+
+</body>
+
+</html>

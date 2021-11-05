@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/basketball.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header class="mb-5">
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning ">
+                    <a class="logo-header navbar-brand text-dark font-weight-bold" href="../index.html">ENCESTALO</a>
+                    <img class="rounded-circle bg-danger" src="../img/basketball.png" alt="logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav navbar-center mr-auto font-weight-bold d-flex justify-content-center">
+                            <li class="nav-item text-center">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                              </li>
+                              <li class="nav-item text-center">
+                                <a class="nav-link active" href="productos.html">Productos</a>
+                              </li>
+                              <li class="nav-item text-center">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                              </li>
+                              
+                            <li class="nav-item dropdown">
+                                <img src="../img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!--Comienzo Formulario-->
+    <main class="container pricing-header  px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto mt-5 mb-5">
+        <div class="bg-primary">
+        <div class="row m-5 text-center d-flex justify-content-center text-danger font-weight-bold   "> 
+            <h1>CONTACTATE CON NOSOTROS</h1>
+        </div>
+        <div class="row  text-center d-flex justify-content-center aling-items-center ">
+            <form  id="form" class=" form col-sm-12 col-md-8 col-lg-6" action="https://formspree.io/f/xyylqnyn" method="POST">
+                <div class=" mb-3">
+                    <label for="name" class="form-label font-weight-bold">Nombre completo</label>
+                    <input  name="name" id="name "type="text" class="form-control" placeholder="Nombre completo" aria-label="Name">
+                  </div>
+                <div class=" mb-3">
+                    <label for="email" class="form-label font-weight-bold">Email</label>
+                    <input  name="email"  type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label font-weight-bold">Mensaje</label>
+                    <textarea  name="message" class="form-control" id="message" rows="3"  placeholder="Ingrese su mensaje"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-dark" type="submit">Enviar</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+    </main>
+
+<!--Fin formulario de contacto-->
+
+
+<!--Comienzo Footer-->
+<footer class="footer container-fluid bg-warning">
+    <div class="row text-center mt-5">
+      <div class="col-lg-4 datos">
+        <h3 class="datos__element font-weight-bold text-muted">ENCESTALO</h3>
+        <p class="datos__element--modifier">Buenos Aires, Argentina</p>
+        <p class="datos__element--modifier">encestalo@gmail.com</p>
+      </div>
+      <div class="col-lg-4 info">
+        <h3 class="info__element font-weight-bold text-muted">ACERCA DE</h3>
+        <p  class="info__element--modifier">Bases y condiciones</p>
+        <p  class="info__element--modifier">Guia de talles</p>
+        <p  class="info__element--modifier">Sobre nosotros</p>
+      </div>
+      <div class="col-lg-4 redes">
+        <h3 class="redes__element font-weight-bold text-muted">SEGUINOS EN</h3>
+        <a href="https://es-la.facebook.com">
+          <i class="redes__element--modifier fab fa-facebook-f m-3"></i>
+        </a>
+      
+      
+        <a href="https://www.instagram.com">
+          <i class="redes__element--modifier fab fa-instagram m-3"></i>
+        </a>
+      
+      
+      <a href="https://twitter.com">
+        <i class="redes__element--modifier fab fa-twitter m-3" ></i>
+      </a>
+      </div>
+    </div>
+    
+  </footer>
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/contacto.js"></script>
+    
+
+</body>
+
+</html>
