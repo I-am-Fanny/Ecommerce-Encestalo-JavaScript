@@ -1,4 +1,4 @@
-# Ecommerce-Encestalo-JavaScript
+# Encestalo E-commerce
 
 This project is an E-commerce
 
